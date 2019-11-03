@@ -9,11 +9,14 @@ using System.Windows.Forms;
 
 namespace DataBindingForWinForms
 {
-    public partial class Form1 : Form
+    public partial class MainView : Form
     {
-        public Form1()
+        private MainPresenter _presenter;
+
+        public MainView()
         {
             InitializeComponent();
+            _presenter = new MainPresenter(this);
         }
     }
 }
